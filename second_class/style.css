@@ -1,0 +1,170 @@
+
+
+.box1 {
+    border: 1px solid green;
+    border-radius: 5px;
+    /* padding: 10px; */
+    padding: 10px 5px;
+    font-size: 24px;
+    /* display: none; */
+}
+
+#box2 {
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.parentBox {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.menu {
+    background-color: lightgray;
+    margin: 0;
+    padding: 10px;
+}
+
+ul li {
+    list-style: none;
+    display: inline;
+    margin: 5px 20px;
+}
+
+.visibility-block {
+    border: 1px solid lightgray;
+}
+
+.mango {
+    background-color: yellow;
+    visibility: visible;
+}
+
+.banana {
+    background-color: blue;
+    visibility: hidden;
+}
+
+#positionSection {
+    border: 1px solid indianred;
+    margin-top: 15px;
+    position: relative;
+}
+
+.absoluteSection1 {
+    /* border: 2px solid red; */
+    background-color: red;
+    position: absolute;
+    top: 10%;
+    left: 60%;
+    z-index: 1000;
+}
+
+.absoluteSection2 {
+    /* border: 2px solid blue; */
+    background-color: blue;
+    position: absolute;
+    top: 20%;
+    right: 40%;
+    /* bottom: ;
+    left: ;
+    right: ; */
+}
+
+.textAlignSection {
+    margin: 15px 0px;
+    border: 1px solid black;
+}
+
+.textLeft {
+    text-align: left;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.textRight {
+    text-align: right;
+}
+
+#pseudoSection {
+    border: 2px solid brown;
+    margin: 10px 0px;
+}
+
+.pseudoHoverTest {
+    background-color: green;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+/* .pseudoHoverTest:hover {
+    opacity: 0.6;
+} */
+
+.pseudoHoverTest p {
+    background-color: violet;
+}
+
+.pseudoHoverTest p:first-child {
+    background-color: black;
+}
+
+.pseudoHoverTest p:last-child {
+    background-color: red;
+}
+
+.pseudoHoverTest h1:first-child {
+    background-color: orange;
+}
+
+.pseudoHoverTest h1:last-child {
+    background-color: blue;
+}
+
+.btnSection {
+    padding: 10px;
+    margin: 15px 0px;
+    border: 1px solid black;
+}
+
+.btnSection button {
+    background-color: forestgreen;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    color: white;
+    border: none;
+}
+
+.btnSection button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: forestgreen;
+    border: 1px solid forestgreen;
+    font-size: 22px;
+    padding: 12px 17px;
+}
+
+
+.btnSection .secondBtn button {
+    background-color: white;
+    border: 1px solid forestgreen;
+    border-radius: 8px;
+    font-size: 20px;
+    color: forestgreen;
+    padding: 10px 15px;
+    margin-top: 10px;
+}
+
+.btnSection .secondBtn button:hover {
+    cursor: pointer;
+    background-color: forestgreen;
+    color: white;
+}
+

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript </title>
+</head>
+<body>
+    
+
+
+    <script>
+        // Modulus - Gives the remainder.
+        let a = 94;
+        let b = 10;
+        let result = a % b;
+
+        // Increment(++) operator
+        let c = 4;
+        let d = ++c;
+        let e = c++;
+
+        // console.log('d', d)
+        // console.log('e', e)
+
+        // Decrement(--) operator.
+        let x = 4;
+        let y = --c;
+        let z = c--;
+
+        // console.log('y', y)
+        // console.log('z', z)
+
+        // Comparison operators (==) & (===)
+        let name = "uche";
+
+        console.log(name == 'uche') // true
+        console.log(name === 'Uche') // false - because of the capital letter
+
+        // Datatypes - string, number, object, array, boolean, float, undefined 
+        let myLocation = 'Lagos Mainland';  // Data-type String
+        let myAge = 10;                     // Data-type - Number
+        let aboutMe = {
+            name: 'Daniel',
+            age: 10,
+            userLocation: 'Lagos'
+        }                                   // Object - Curly braces
+        let hobbies = ['reading', 'coding', 'singing']  // Array - Square brackets
+        let isNigerian = true;               // Boolean
+        let isGhanian = false;               // Boolean
+        let cutoffMark = 63.45               // Float - decimal 
+
+        let aboutMe2 = {
+            yourName: name
+        }
+
+        // Indepth look at array.
+        const fruits = ['apple', 'orange', 'banana', 'tangerine', 'grape', 'water melon', 'pineapple'];
+        
+        // To know the total number of items in an array, use array.length method.
+        console.log('fruit-length', fruits.length)
+
+        // To pick an item in an array, you use the index.
+        console.log('item-4', fruits[3])
+        console.log('last-item', fruits[6])
+        console.log('first-item', fruits[0])
+
+        // To pick a property of an object, you use object-name dot property(obj.prop)\
+        let songArtists = {
+            name1: 'Chris Brown',
+            name2: 'Sammie Okposo',
+            name3: 'Tim Godfrey'
+        }
+
+        console.log(songArtists.name1)
+        console.log(songArtists.name3)
+
+        // Nesting an array inside an object
+        const myBiography = {
+            name: "Danny Flames",
+            age: 10,
+            hobbies: [ 'singing', 'coding', 'jumping', 'sitting' ],
+            bestFriend: {
+                name: 'Charles',
+                age: 9,
+                hobbies: ['dancing', 'baking', 'singing']
+            }
+        }
+
+        console.log(myBiography.hobbies[2])
+        console.log(myBiography.bestFriend.hobbies[2])
+
+        // An array of objects 
+        const userRecords = [
+            {
+                id: 1,
+                name: 'Daniel',
+                age: 7,
+                location: 'Lagos',
+                hobbies: [
+                    'singing',
+                    'dancing'
+                ],
+                bestFriend: {
+                    name: 'Emeka',
+                    age: 5,
+                    hobbies: ['sleeping', 'eating']
+                }
+            },
+            {
+                id: 2,
+                name: 'Uche',
+                age: 8,
+                location: 'Abuja',
+                hobbies: [
+                    'singing',
+                    'reading'
+                ],
+                bestFriend: {
+                    name: 'Tope',
+                    age: 6,
+                    hobbies: ['dancing', 'sleeping']
+                }
+            }
+        ]
+
+        console.log(userRecords[1].hobbies[1])
+        console.log('daniel-bestFriend', userRecords[0].bestFriend.hobbies[1])
+
+        // Conditional Statements - if, else, and else if.
+        let babe = 'Feyi';
+
+        if (babe == 'Feyi') {
+            console.log('Yes, we got it.')
+        } else {
+            console.log('no, we are wrong.')
+        }
+
+        let babe2 = "Anita";
+
+        if (babe2 != 'Anita') {
+            console.log('Babe2 is not Anita.')
+        } else {
+            console.log('Babe2 is Anita.')
+        }
+
+        // Functions 
+        // Let create a function that displays someone's name.
+        function showName() {
+            let name = "Uche";
+            let result;
+
+            if (name == 'Uche') {
+                result = 'You are correct';
+            } else {
+                result = "You are wrong."
+            }
+
+            return result;
+        }
+
+        console.log(showName())
+
+        function showFruitName() {
+            let fruits = ['pear', 'strawberry', 'apple']
+
+            return fruits[2];
+        }
+
+        console.log(showFruitName())
+
+        // Let's create a function that adds two numbers together.
+        function addNums() {
+            let num1 = 10;
+            let num2 = 15;
+            let result = num1 + num2;
+
+            return result;
+        }
+
+        console.log(addNums())
+
+        // A function can be built to take in parameters. i.e when you pass something into the parenthesis of the function
+        function showBiography(name, age, location, job_desc) {
+            let sentence1 = 'My name is ' + name;
+            let sentence2 = "I am " + age + " yrs old.";
+            let sentence3 = "I am based in " + location;
+            let sentence4 = "I am a " + job_desc;
+            let myBiography = sentence1 + ' ' + sentence2 + ' ' + sentence3 + ' ' + sentence4;
+
+            return myBiography;
+        }
+
+        console.log(showBiography('Samuel', 9, 'Akure', 'Web Developer'))
+
+        // Build a software program that takes in three inputs from a user and returns the total of these inputs.
+        function calculator(x, y, z) {
+            let total = x + y + z;
+
+            return total;
+        }
+
+        console.log(calculator(4, 5, 6))
+        
+
+
+    </script>
+</body>
+</html>

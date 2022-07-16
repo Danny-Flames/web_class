@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+        #output1 {
+            height: 100px;
+            width: 200px;
+            border: 1px solid blue;
+            border-radius: 5px;
+        }
+
+        #output2 {
+            height: 100px;
+            width: 200px;
+            border: 1px solid red;
+            border-radius: 5px;
+        }
+
+        #output3 {
+            height: 100px;
+            width: 200px;
+            border: 1px solid green;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="output1"></div>
+    <div id="output2"></div>
+    <div id="output3"></div>
+    
+
+    <script>
+        let display1 = document.getElementById('output1');
+        let display2 = document.getElementById('output2');
+        let display3 = document.getElementById('output3');
+
+        display1.innerHTML = "I am a div element with output 1."
+
+        let fruits = ['apple', 'banana', 'orange', 'pear']
+        display2.innerHTML = fruits;
+
+        // Build a software program that takes in three inputs from a user and returns the total of these inputs.
+        function calculator(x, y, z) {
+            let total = x + y + z;
+
+            return total;
+        }
+
+        display3.innerHTML = calculator(6, 8, 6);
+
+    </script>
+</body>
+</html>

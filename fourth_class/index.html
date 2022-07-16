@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Javascript Class</title>
+    <style>
+        #box1 {
+            border: 1px solid blue;
+            height: 100px;
+            width: 300px;
+        }
+
+        #box2 {
+            border: 1px solid brown;
+            height: 100px;
+            width: 300px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>
+        In other to have your javascript file inside your html file, it must be enclosed 
+        in opening and closing script tags and also, the script tags must always be below
+        all your html texts(In other words, your script tags must always be at the bottom just 
+        before the closing body tag).
+    </h2>
+
+    <div id="box1">
+        
+    </div>
+    <div id="box2">
+
+    </div>
+
+    <div id="output"></div>
+    
+
+    <script>
+        document.getElementById('box1').innerHTML = 'I am box 1.';
+        document.getElementById('box2').innerHTML = 'I am box 2.';
+
+
+        document.write('I am an anonymous element.');
+
+        // I want to do some calculations
+        // document.write(4 + 5);
+
+        // I want to alert something.
+        // window.alert('I am learning javascript.');s
+
+        /* I am looking at console.log below. 
+        The browser's console helps us logs output or errors out. */
+
+        console.log('Hey yo, i am so happy!');
+
+        // Variables 
+        // variables are used to store data. You can either use var, const or let.
+        var myName = "Daniel"; 
+        let myName2 = "Emeka";
+        var carton = "Packet of sweet";
+        let fruit = "Grape";
+        const myState = "I am from cross river state."; 
+
+        // Assignment operator (=)
+        var num1 = 10;
+        var num2 = 12;
+        let result = num1 + num2;
+
+        let numberOutput = document.getElementById('output');
+        numberOutput.innerHTML = result;
+
+        var myCountry = "Nigeria";
+        myCountry = "Ghana";
+        console.log(myCountry)
+
+        let artist = "Tuface";
+        artist = "Chris Brown"
+        console.log(artist)
+
+        /* You cannot redeclare any variable you created using const keyword. 
+        Only varaibles created with let and var can be redeclared */
+        const myHobby = "Playing the piano.";
+        // myHobby = "Singing";
+
+        let mySchool;
+        console.log(mySchool)
+
+        // Modulus(%), increment(++), decrement(--)
+        let firstNum = 100;
+        let secondNum = 25;
+        let ourResult = firstNum / secondNum;
+        let ourResult2 = firstNum % secondNum;
+
+        console.log(ourResult)
+        console.log(ourResult2)
+
+        let thirdNum = 84;
+        let fourthNum = 9;
+        let ourResult3 = thirdNum % fourthNum;
+        console.log(ourResult3)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Class</title>
+    <style>
+        .biography {
+            background-color: darkblue;
+            color: red;
+            border: 5px solid green;
+        }
+
+        .box {
+            border: 2px solid green;
+            background-color: lightgray;
+            color: green;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 50px;
+        }
+
+        #box2 {
+            border: 3px dashed brown;
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- h1, h2, h3, h4, h5, h6, p, br, hr, span, div, main, section  -->
+
+    <!-- Biography -->
+    <div class="biography">
+        My name is Daniel and <br /> i'm a fullstack software developer.
+        I'm from cross river state but reside in Lagos.
+    </div>
+    <hr />
+
+    <!-- Hobby/Interest  -->
+    <div>
+        I like playing the piano.
+    </div>
+    <hr />
+
+    <div class="box">
+        <p>Hyperlinks are used to navigate between different documents.</p>
+        <p>Anything inserted inside the opening tag of your element is referred to as an attribute</p>
+        <p>It is called an anchor tag</p>
+        <p>hr is called horizontal rule</p>
+    </div>
+    <hr />
+
+
+    <div id="box2">
+        <a href="about.html">Go To About Page</a>
+        <p>Images</p>
+        <p>To insert an image into your document, you use the <b>img</b> tag.</p>
+        <p>To get into a file or folder, always start with a dot.</p>
+    </div>
+    <hr />
+
+    <div>
+        <p>If the file/folder is in the same directory with your present working directory, then
+            you use one dot and a slash(./) but if the file/folder which you want to get to is a directory
+            a step out of the folder you're in, use two dots(../).
+        </p>
+        <img src="./images/clef.jpg" alt="Image-Here">
+    </div>
+    <hr />
+
+    <h2>Tables</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Micheal</td>
+                <td>Smith</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Emmanuel</td>
+                <td>Ken</td>
+                <td>12</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr />
+
+    <div>
+        <p>Ordered list and unordered list</p>
+        <p>Ordered list uses <em>ol</em> tag while unordered list uses <em>ul</em> tag</p>
+        <h4>Name of fruits - Unordered list</h4>
+        <ul>
+            <li>Mango</li>
+            <li>Banana</li>
+            <li>Orange</li>
+            <li>Tangerine</li>
+        </ul>
+        <hr />
+        <h4>Name of fruits - Ordered list</h4>
+        <ol>
+            <li>Mango</li>
+            <li>Banana</li>
+            <li>Orange</li>
+            <li>Tangerine</li>
+        </ol>
+    </div>
+    <hr />
+
+    <div>
+        <h4>Forms</h4>
+        <form action="">
+            <div>
+                <p>Input type <b>text</b></p>
+                <input type="text" />
+                <hr />
+            </div>
+            <div>
+                <p>Input type <b>email</b></p>
+                <input type="text" />
+                <hr />
+            </div>
+            <div>
+                <p>Input type <b>number</b></p>
+                <input type="number" />
+                <hr />
+            </div>
+            <div>
+                <p>Input type <b>file</b></p>
+                <input type="file" />
+                <hr />
+            </div>
+        </form>
+    </div>
+    <hr />
+
+
+    <div>
+        <h2>CSS</h2>
+        <p>Three methods of styling</p>
+        <ul>
+            <li style="background-color: black; color: white;">inline styling</li>
+            <li style="background-color: green; color: white;">Internal styling</li>
+            <li style="background-color: orange; color: white;">External styling</li>
+        </ul>
+    </div>
+    <hr />
+
+    <div>
+        <h2>Mrgin & Padding</h2>
+        <p>
+            Padding is the space between the element and its content.
+        </p>
+        <p>
+            Margin is the space outside of the element and it's parent element 
+        </p>
+    </div>
+    <hr />
+
+    <div>
+        <p>
+            Inline styling is done in-between the opening tag of the element(note that this element 
+            may be h1, h2, div, p and so on...).
+        </p>
+        <p>
+            Internal styling is done in between the opening head element(usually found at the top of the html document) 
+            and the closing head element. And internal styling is done inside the style element.
+            In summary, the internal styling will be inside the style element and the style element will be 
+            inside the opening and closing head tags.
+        </p>
+    </div>
+
+</body>
+
+</html>
